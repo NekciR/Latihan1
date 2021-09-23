@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnToRecyclerView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Recycler View"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+    <SearchView
+        android:id="@+id/svSearchUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search Github Users" />
+
+    <ListView
+        android:id="@+id/lvUserList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rlEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvEmpty"
+            android:text="No User(s) Found"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>
